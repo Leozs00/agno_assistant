@@ -88,8 +88,23 @@ Siga os passos abaixo para configurar e rodar o projeto localmente.
     ```
 
 4.  **Configure as variáveis de ambiente:**
-    -   Renomeie o arquivo `.env.example` para `.env` (se houver um no repositório) ou crie um novo.
-    -   Abra o arquivo `.env` e preencha todas as variáveis com suas chaves e credenciais (Google API Key, Evolution API, Redis, etc.).
+    -   Crie um arquivo `.env` e coloque suas credencias:
+    ```bash
+    #.env
+    # Chave da API do Gemini
+    GOOGLE_API_KEY=""
+    
+    # Configurações da sua instância da Evolution API
+    EVOLUTION_API_URL="" 
+    EVOLUTION_API_KEY=""
+    EVOLUTION_INSTANCE_NAME=""     
+    
+    #REDIS
+    # --- Configurações do Redis ---
+    REDIS_HOST=""
+    REDIS_PORT=
+    REDIS_USER=""
+    REDIS_PASSWORD=""
 
 5.  **Prepare a Base de Conhecimento (RAG):**
     -   Crie uma pasta chamada `data` na raiz do projeto.
